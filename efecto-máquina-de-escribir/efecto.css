@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+     height: 100vh;
+    font-family: monospace; 
+    background-color: tomato;
+}
+.container{
+    margin: auto;
+    display: table;
+    border-bottom: 3px solid hsl(0, 79%, 24%);
+}
+h1{
+    color: #ffffff;
+    float: left;
+    position: relative;
+}
+.animation{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: tomato;
+    border-left: 1px solid #000000;
+    animation: maquina 5s infinite alternate steps(30);
+}
+@keyframes maquina {
+    from{
+        width: 100%
+    }
+    to{
+        width: 0;
+    }
+}
